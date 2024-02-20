@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #e0e5ec; /* Neumorphic background */
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #505c75;
+  margin-bottom: 20px;
+}
+
+#buttons, #axes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.button, .axis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  background: #e0e5ec;
+  box-shadow: 8px 8px 15px #a3b1c6, -8px -8px 15px #ffffff;
+  font-size: 14px;
+  color: #505c75;
+  user-select: none;
+}
+
+.active {
+  box-shadow: inset 8px 8px 15px #a3b1c6, inset -8px -8px 15px #ffffff;
+  color: #4CAF50; /* Green text for active inputs */
+}
